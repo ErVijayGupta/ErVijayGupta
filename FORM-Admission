@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FORM2.css">
+    <title> FORM2 </title>
+</head>
+
+<body>
+
+    <BODY>
+        <CENTER>
+            <H3>ADMISSION FORM</H3>
+        </CENTER>
+        <hr color="blue">
+        <marquee>This sample registration form is just for test, Thanks. </marquee>
+        <hr color="blue">
+        <form>
+            <fieldset>
+                <legend align="center">
+                    <h3>Personal Use</h3>
+                </legend>
+                <img src="s1.png" height="50" width="50" alt="No image" border="3px">
+                <SPAN>Search :</SPAN>
+                <input type="search">
+                <br>
+                <span>Name :
+                    <input type="text" placeholder="Enter your name">
+                </span>
+                <span>
+                    Address:
+                    <input type="text" placeholder="Noida">
+                </span>
+                <br>
+                <span>
+                    Password:
+                    <input type="password">
+                </span>
+                <br>
+                Enter City :
+                <select id="City" name="City">
+                    <option value="Delhi">Delhi</option>
+                    <option value="Noida">Noida</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Mumbai">Mumbai</option>
+                </select>
+                Country :
+                <select id="country" name="country" size="4">
+                    <option value="India">India</option>
+                    <option value="Nepal">Nepal</option>
+                    <option value="USA">USA</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Bhutan">Bhutan</option>
+                    <option value="Canada">Canada</option>
+                </select>
+                <br>
+                <label for="course">Course :</label>
+                <select name="course" id="course">
+                    <optgroup label="Engineering">
+                        <option value="ME">Mechanical Engineering</option>
+                        <option value="CE">Civil Engineering</option>
+                        <option value="EE">Electrical Engineering</option>
+                    </optgroup>
+                    <optgroup LABEL="Medical">
+                        <option value="MBBS">MBBS</option>
+                        <OPTION VALUE="BDS">BDS</OPTION>
+                        <option value="B.Pharma">B.Pharma</option>
+                    </optgroup>
+                </select>
+                What is the name of your favourite color?
+                <select style="-webkit-appearance:none; width: 200px;">
+                    <option value="none" selected disabled hidden>
+                        Select difficulty level.... </option>
+                    <option value="blue">Blue</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="red">Red</option>
+                    <option value="pink">Pink</option>
+                    <option value="green">Green</option>
+                    <option value="white">White</option>
+                </select>
+                <br>
+                <span>
+                    <b>Gender :</b>
+                    <input type="radio" id="Male" name="Gender" value="Male">
+                    <label for="Male">Male</label>
+                    <input type="radio" id="Female" name="Gender" value="Female">
+                    <label for="Female">Female</label>
+                </span>
+                &nbsp;&nbsp;&nbsp;
+                <span>
+                    <b>Hobby :</b>
+                    <input type="checkbox" value="sports">Sports
+                    <input type="checkbox" value="Dance">Dance
+                    <input type="checkbox" value="Music">Music
+                    <input type="checkbox" value="Others">Others
+                </span>
+                <h5>
+            </fieldset>
+            <fieldset>
+                <legend align="center">
+                    <h3>Official Information</h3>
+                </legend>
+                </h5>
+                <br>
+                Date of birth : <input type="date">
+                Time of birth : <input type="time">
+                Date & Time : <input type="datetime-local">
+                <br>
+                Email-id : <input type="email">
+                Choose color : <input type="color">
+                <br>
+                Age :<input type="number">
+                <br>
+                CODE:
+                <input type="password" placeholder="very confidential"><input type="text" value="very confidential">
+                <br>
+                Telephone : <input type="text" Value="ABC675">
+                Code:<input type="text">
+                Phone: <input type="text">
+                <br>
+                Telephone :
+                <input type="text" placeholder="follow format eg. 123-45-6789" size="45px">
+                <br>
+                Code :
+                <input type="text" placeholder="follow pattern-A-Z a-z 0-9 $ Max 7 & Min 3" size="45px">
+                <br>
+                For Official Use :
+                <br>
+                Range :
+                <input type="range" value="40" min="30" max="100" oninput="this.nextElementSibling.value = this.value">
+                <output>40</output>
+                &nbsp; &emsp; &ensp;
+                <progress></progress>
+                <br><BR>
+                <label for="file">Downloading progress:</label>
+                <progress id="file" value="32" max="100"> 32% </progress>
+                <BR><BR>
+                <p>Audio settings:</p>
+
+                <div>
+                    <input type="range" id="volume" name="volume" min="0" max="11">
+                    <label for="volume">Volume</label>
+                </div>
+
+                <div>
+                    <input type="range" id="cowbell" name="cowbell" min="0" max="100" value="90" step="10">
+                    <label for="cowbell">Cowbell</label>
+                </div>
+                <br>
+                Range :
+                <input type="range" list="tickmarks">
+                <datalist id="tickmarks">
+                    <option value="0"></option>
+                    <option value="10"></option>
+                    <option value="20"></option>
+                    <option value="30"></option>
+                    <option value="40"></option>
+                    <option value="50"></option>
+                    <option value="60"></option>
+                    <option value="70"></option>
+                    <option value="80"></option>
+                    <option value="90"></option>
+                    <option value="100"></option>
+                </datalist>
+                <br>
+                Enter Comments: <br>
+                <textarea name="comment" rows="10" cols="50" placeholder="Enter your comments here :">  </textarea>
+                <br>
+                <input type="button" value="Accept">
+                <input type="button" value="Clear">
+                <input type="submit" value="Click me">
+                <input type="button" value="Use me">
+                <br>
+            </fieldset>
+        </FORM>
+    </body>
+
+</html>
